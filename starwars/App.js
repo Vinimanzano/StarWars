@@ -1,8 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; // Importe o Tab Navigator
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-import { TouchableOpacity, Text } from 'react-native'; // Importe Text
+import { TouchableOpacity, Text } from 'react-native'; 
 import { MaterialIcons } from '@expo/vector-icons';
 import HomeScreen from './screens/HomeScreen';
 import Dia4Screen from './screens/Dia4Screen';
@@ -12,7 +12,7 @@ import TerceiraTrilogiaScreen from './screens/TerceiraTrilogiaScreen';
 import DarthVaderScreen from './screens/DarthVaderScreen';
 
 const Stack = createStackNavigator();
-const Tab = createBottomTabNavigator(); // Crie o Tab Navigator
+const Tab = createBottomTabNavigator();
 
 function AppNavigator() {
   return (
@@ -20,15 +20,15 @@ function AppNavigator() {
       <Tab.Navigator
         tabBarOptions={{
           style: {
-            backgroundColor: '#000', // Cor de fundo preta
+            backgroundColor: '#000',
           },
           labelStyle: {
-            color: '#fff', // Cor do texto branco
-            fontSize: 16, // Tamanho da fonte 16
+            color: '#fff',
+            fontSize: 16, 
           },
           tabStyle: {
-            justifyContent: 'center', // Centraliza o conteúdo verticalmente
-            alignItems: 'center', // Centraliza o conteúdo horizontalmente
+            justifyContent: 'center', 
+            alignItems: 'center',
           },
         }}
       >
